@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="../assets//css/contact.css">
+    <title>Contact Us</title>
+</head>
+<body>
+
+<div class="form-container">
+<form  action="" id="form" >
+<h3>Contact Us</h3>
+<class class="container">
+
+<input type="text" placeholder="Username"/>
+<div class="container">
+
+<input type="email" placeholder="Email"/>
+</div>
+<div class="container">
+
+<input type="text" placeholder="Subject"/>
+</div>
+<div class="container">
+
+<textarea name="text" id="" cols="40" rows="20" placeholder="Your Comment"></textarea>
+</div>
+<input type="submit" value="Submit">
+</form>
+
+</div>
+
+  <footer>
+        <div class="footer-container">
+
+            <div class="footer-top">
+                <div class="main">
+                    <div class="logo">
+                        <a href="">
+                            <img src="./assets/img/logo.png" alt="">
+                        </a>
+                    </div>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+                    <div class="socials">
+                        <ul>
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.twitter.com">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.instagram.com">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="quick-links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li>
+                            <a class="secondary-link" href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="secondary-link" href="./pages/about.html">About</a>
+                        </li>
+                        <li>
+                            <a class="secondary-link" href="./pages/services.html">Services</a>
+                        </li>
+                        <li>
+                            <a class="secondary-link" href="">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="newsletter">
+                    <h2>Newsletter</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    <form action="">
+                        <input type="email" placeholder="Enter Your Email" required>
+                        <button type="submit" class="primary-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                Copyright © 2022 – All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="../assets/js/particles.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                center: true,
+                items:2,
+                margin: 40,
+                loop:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    500:{
+                        items:2
+                    },
+                    1000:{
+                        items:3
+                    }
+                },
+                smartSpeed: 450,
+                autoplay:true,
+                autoplayTimeout:2500,
+                autoplayHoverPause:true
+            });
+        });
+    </script>
+
+</body>
+</html>
