@@ -121,6 +121,7 @@ header{
     align-items: center;
     /* padding-top: 80px; */
     position: relative;
+    overflow: hidden;
 }
 
 #particles-js{
@@ -180,6 +181,7 @@ section{
     justify-content: center;
     align-items: center;
     /* border: solid 1px green; */
+    overflow: hidden;
 }
 
 section .sub-title{
