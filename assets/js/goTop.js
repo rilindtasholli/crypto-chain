@@ -5,8 +5,10 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    console.log('show')
     goTopButton.style.display = "block";
   } else {
+    console.log('hide')
     goTopButton.style.display = "none";
   }
 }

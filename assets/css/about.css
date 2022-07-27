@@ -75,3 +75,13 @@
   background-color: var(--secondary);
   transition: 0.3s;
 }
+
+
+/* ------------------  MEDIA QUERIES ------------------ */
+
+
+@media only screen and (max-width: 900px) {
+  .members{
+    flex-direction: column;
+  }
+}

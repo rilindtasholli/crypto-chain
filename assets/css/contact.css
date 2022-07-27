@@ -1,6 +1,6 @@
-#contact-section > div{
+/* #contact-section > div{
     margin: 50px;
-}
+} */
 
 section p{
     text-align: left;
@@ -161,4 +161,17 @@ section p{
     transform: scale(1.09);
     background-color: var(--secondary);
     transition: 0.3s;
+}
+
+/* ------------------  MEDIA QUERIES ------------------ */
+
+
+@media only screen and (max-width: 768px) {
+    .info-items{
+        flex-direction: column;
+    }
+
+    .contact-info > p{
+        width: 100vw;
+    }
 }
