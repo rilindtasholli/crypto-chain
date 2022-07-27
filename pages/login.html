@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/login.css">
@@ -21,8 +23,8 @@
 
         <nav>
             <div class="logo">
-                <a href="">
-                    <img src="../assets/img/logo.png" alt="">
+                <a href="../index.html">
+                    <img src="../assets/img/logo.png" alt="CryptoChain Logo">
                 </a>
             </div>
     
@@ -115,7 +117,7 @@
                 <div class="main">
                     <div class="logo">
                         <a href="">
-                            <img src="../assets/img/logo.png" alt="">
+                            <img src="../assets/img/logo.png" alt="CryptoChain Logo">
                         </a>
                     </div>
                     
@@ -182,13 +184,16 @@
     
     
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="../assets//js/sidebar.js"></script>
+    <script src="../assets//js/main.js"></script>
     <script src="../assets/js/particles.js"></script>
-    <script src="../assets/js/wow.js"></script>
-    <script src="../assets/js/goTop.js"></script>
+
+    <script>
+        window.onscroll = function() {
+            scrollFunctionGoTopBtn()
+        };
+    </script>
 
 </body>
 </html>

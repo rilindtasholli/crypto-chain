@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
 
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/services.css">
@@ -22,8 +24,8 @@
 
         <nav>
             <div class="logo">
-                <a href="">
-                    <img src="../assets/img/logo.png" alt="">
+                <a href="../index.html">
+                    <img src="../assets/img/logo.png" alt="CryptoChain Logo">
                 </a>
             </div>
     
@@ -94,37 +96,37 @@
             
             <div class="container">
                 <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
-                    <img src="../assets/img/wallet.png" alt="">
+                    <img class="lozad" data-src="../assets/img/wallet.png" alt="Wallet Illustration">
                     <h3>Secure Wallet</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                 </div>
 
                 <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
-                    <img src="../assets/img/secure.png" alt="">
+                    <img class="lozad" data-src="../assets/img/secure.png" alt="Security Illustration">
                     <h3>Fully Protection</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                 </div>
 
                 <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
-                    <img src="../assets/img/analysis.png" alt="">
+                    <img class="lozad" data-src="../assets/img/analysis.png" alt="Analysis and Planning Illustration">
                     <h3>Analysis & Planning</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                 </div>
 
                 <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
-                    <img src="../assets/img/invest.png" alt="">
+                    <img class="lozad" data-src="../assets/img/invest.png" alt="Investment Illustration">
                     <h3>Investment projects</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                 </div>
 
                 <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
-                    <img src="../assets/img/platform.png" alt="">
+                    <img class="lozad" data-src="../assets/img/platform.png" alt="Trading Platform Illustration">
                     <h3>Crypto Trading Platform</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                 </div>
 
                 <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
-                    <img src="../assets/img/buy.png" alt="">
+                    <img class="lozad" data-src="../assets/img/buy.png" alt="Buy and Sell Coins Illustration">
                     <h3>Buy & Sell Coin</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                 </div>
@@ -255,7 +257,7 @@
                 <div class="main">
                     <div class="logo">
                         <a href="">
-                            <img src="../assets/img/logo.png" alt="">
+                            <img src="../assets/img/logo.png" alt="CryptoChain Logo">
                         </a>
                     </div>
                     
@@ -322,15 +324,34 @@
     
     
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/countup@1.8.2/countUp.js"></script>
 
-    <script src="../assets//js/sidebar.js"></script>
+    <script src="../assets//js/main.js"></script>
     <script src="../assets/js/particles.js"></script>
-    <script src="../assets/js/wow.js"></script>
-    <script src="../assets/js/countUp.js"></script>
-    <script src="../assets/js/goTop.js"></script>
+
+    <script>
+        //--------------------------- [[CountUp.js]] -> CountUp number animations ---------------------------------
+        let experienceNum = new CountUp('experienceNum', 0, 12);
+        let investmentNum = new CountUp('investmentNum', 0, 20);
+        let teamNum = new CountUp('teamNum', 0, 85);
+        let countriesNum = new CountUp('countriesNum', 0, 150);
+
+        function countUp(){
+            if(isElementVisible('experienceNum')) experienceNum.start();
+            if(isElementVisible('investmentNum')) investmentNum.start();
+            if(isElementVisible('teamNum')) teamNum.start();
+            if(isElementVisible('countriesNum')) countriesNum.start();
+        }
+
+        //----------------- OnScroll -----------------
+        window.onscroll = function() {
+            scrollFunctionGoTopBtn()
+            countUp()
+        };
+
+    </script>
 
     <script>
         //Script for FAQ accordions
