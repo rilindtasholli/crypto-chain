@@ -44,7 +44,35 @@
                 <a class="secondary-link" href="./pages/login.html">Sign In</a>
                 <a class="primary-btn" href="./pages/register.html">Get Started</a>
             </div>
+
+            <button onclick="toggleSideBar()" class="toggleSideBar">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
+
+        <div class="sidebar">
+            <button onclick="toggleSideBar()" class="close">×</button>
+    
+            <ul>
+                <li class="active">
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="./pages/about.html">About</a>
+                </li>
+                <li>
+                    <a href="./pages/services.html">Services</a>
+                </li>
+                <li>
+                    <a href="./pages/contact.html">Contact</a>
+                </li>
+            </ul>
+    
+            <div class="account">
+                <a class="secondary-link" href="./pages/login.html">Sign In</a>
+                <a class="primary-btn" href="./pages/register.html">Get Started</a>
+            </div>
+        </div>
 
         <div class="content">
             <h1 class="wow animate__slideInLeft" data-wow-duration="1.5s">Blockchain Solutions and <span>Cryptocurrency</span> Investments</h1>
@@ -157,18 +185,8 @@
             
             <div class="container">
                 <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
-                    <img src="./assets/img/easy.png" alt="">
-                    <h3>Easy To Transact</h3>
-                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
-                    <a class="primary-link" href="./pages/services.html">
-                        Read More
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
-                    <img src="./assets/img/bitc.png" alt="">
-                    <h3>No Fear Of Loss</h3>
+                    <img src="./assets/img/wallet.png" alt="">
+                    <h3>Secure Wallet</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                     <a class="primary-link" href="./pages/services.html">
                         Read More
@@ -178,7 +196,7 @@
 
                 <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
                     <img src="./assets/img/secure.png" alt="">
-                    <h3>Foolproof Security</h3>
+                    <h3>Fully Protection</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                     <a class="primary-link" href="./pages/services.html">
                         Read More
@@ -187,8 +205,8 @@
                 </div>
 
                 <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
-                    <img src="./assets/img/secure.png" alt="">
-                    <h3>Foolproof Security</h3>
+                    <img src="./assets/img/analysis.png" alt="">
+                    <h3>Analysis & Planning</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                     <a class="primary-link" href="./pages/services.html">
                         Read More
@@ -197,8 +215,8 @@
                 </div>
 
                 <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
-                    <img src="./assets/img/secure.png" alt="">
-                    <h3>Foolproof Security</h3>
+                    <img src="./assets/img/invest.png" alt="">
+                    <h3>Investment projects</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                     <a class="primary-link" href="./pages/services.html">
                         Read More
@@ -207,8 +225,18 @@
                 </div>
 
                 <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
-                    <img src="./assets/img/secure.png" alt="">
-                    <h3>Foolproof Security</h3>
+                    <img src="./assets/img/platform.png" alt="">
+                    <h3>Crypto Trading Platform</h3>
+                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
+                    <a class="primary-link" href="./pages/services.html">
+                        Read More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
+                    <img src="./assets/img/buy.png" alt="">
+                    <h3>Buy & Sell Coin</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                     <a class="primary-link" href="./pages/services.html">
                         Read More
@@ -406,6 +434,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script src="./assets//js/sidebar.js"></script>
     <script src="./assets/js/particles.js"></script>
     <script src="./assets/js/wow.js"></script>
     

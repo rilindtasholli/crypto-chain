@@ -38,10 +38,38 @@
             </ul>
     
             <div class="account">
-                <a class="secondary-link" href="../pages/login.html">Sign In</a>
-                <a class="primary-btn" href="../pages/register.html">Get Started</a>
+                <a class="secondary-link" href="./login.html">Sign In</a>
+                <a class="primary-btn" href="./register.html">Get Started</a>
             </div>
+        
+            <button onclick="toggleSideBar()" class="toggleSideBar">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
+    
+        <div class="sidebar">
+            <button onclick="toggleSideBar()" class="close">×</button>
+
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+                <li>
+                    <a href="./services.html">Services</a>
+                </li>
+                <li class="active">
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+    
+            <div class="account">
+                <a class="secondary-link" href="./login.html">Sign In</a>
+                <a class="primary-btn" href="./register.html">Get Started</a>
+            </div>
+        </div>
         
         <div class="content">
             <h1>Contact Us</h1>
@@ -240,7 +268,7 @@
     <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
+    <script src="../assets//js/sidebar.js"></script>
     <script src="../assets/js/particles.js"></script>
     <script src="../assets/js/wow.js"></script>
 
