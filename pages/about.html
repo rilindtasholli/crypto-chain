@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/about.css" />
+    <link rel="stylesheet" href="../assets/css/animate.css" />
+  </head>
+  <body>
+     <button onclick="goToTop()" class="goTopBtn">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
+    
+    <header>
+      <div id="particles-js"></div>
+
+      <nav>
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../assets/img/logo.png" alt="CryptoChain Logo">
+          </a>
+      </div>
+
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="active">
+            <a href="../about.html">About</a>
+          </li>
+          <li>
+            <a href="./services.html">Services</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="account">
+          <a class="secondary-link" href="./login.html">Sign In</a>
+          <a class="primary-btn" href="./register.html">Get Started</a>
+        </div>
+
+        <button onclick="toggleSideBar()" class="toggleSideBar">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+
+      <div class="sidebar">
+          <button onclick="toggleSideBar()" class="close">×</button>
+
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="active">
+              <a href="../about.html">About</a>
+            </li>
+            <li>
+              <a href="./services.html">Services</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="account">
+              <a class="secondary-link" href="./pages/login.html">Sign In</a>
+              <a class="primary-btn" href="./pages/register.html">Get Started</a>
+          </div>
+      </div>
+
+      <div class="content">
+        <h1>About Us</h1>
+        <div class="navigation">
+          <a class="secondary-link" href="/">Home</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>About</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="welcome-section">
+        <div class="section-image wow animate__fadeInLeft" data-wow-duration="1.5s" data-wow-offset="200">
+          <img class="lozad" data-src="../assets/img/Bitcoin-Analysis2.png" alt="Bitcoin Analysis Illustration" />
+        </div>
+
+        <div class="section-content">
+          <span class="sub-title wow animate__fadeInRight" data-wow-duration="1.5s" data-wow-offset="150">Welcome To CryptoChain</span>
+          <h2>Smart and Secure Way To Invest In Crypto</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim.
+          </p>
+          <a class="primary-btn" href="./register.html"
+            >Get Started Now</a
+          >
+        </div>
+      </section>
+
+      <section id="choose-us-section">
+        <div class="section-content">
+          <span class="sub-title wow animate__fadeInLeft" data-wow-duration="1.5s" data-wow-offset="200">Why Choose Us</span>
+          <h2>We’ve Built A Platform To Buy And Sell Shares</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et.
+          </p>
+
+          <ul>
+            <li>
+              <img class="lozad" data-src="../assets/img/secure.png" alt="Secure Data Illustration" />
+              <div class="content">
+                <h3>Secure User Data</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                  eiusmod tempor incidiunt ut labore et dolore magna aliqua
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <img class="lozad" data-src="../assets/img/credibility.png" alt="Credibility Illustration" />
+              <div class="content">
+                <h3>Most Creadibility</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                  eiusmod tempor incidiunt ut labore et dolore magna aliqua
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <img class="lozad" data-src="../assets/img/analysis.png" alt="Data Analysis Illustration" />
+              <div class="content">
+                <h3>Big Data Insights</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                  eiusmod tempor incidiunt ut labore et dolore magna aliqua
+                </p>
+              </div>
+            </li>
+          </ul>
+          <!-- <a class="primary-btn" href="#getstarted">Get Started Now</a> -->
+        </div>
+
+        <div class="section-image wow animate__fadeInRight" data-wow-duration="1.5s" data-wow-offset="200">
+          <img class="lozad" data-src="../assets/img/Bitcoin-Analysis3.png" alt="Bitcoin Analysis Illustration" />
+        </div>
+      </section>
+
+      <section id="about-section">
+          <h2 class="wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="200">Most Trusted Cryptocurrency Platform</h2>
+          <p class="wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="250">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </p>
+          
+          <div class="container">
+              <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
+                  <img class="lozad" data-src="../assets/img/easy.png" alt="Easy transcation illustration">
+                  <h3>Easy To Transact</h3>
+                  <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
+              </div>
+
+              <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
+                  <img class="lozad" data-src="../assets/img/bitc.png" alt="Bitcoin illustration">
+                  <h3>No Fear Of Loss</h3>
+                  <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
+              </div>
+
+              <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
+                  <img class="lozad" data-src="../assets/img/secure.png" alt="Security illustration">
+                  <h3>Foolproof Security</h3>
+                  <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
+              </div>
+          </div>
+      </section>
+
+      <section id="team-section">
+        <span class="sub-title wow animate__fadeInLeft" data-wow-duration="1.5s" data-wow-offset="200">Our Team</span>
+        <h2 class="wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="200">Meet Our Experts</h2>
+        <p class="wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="200">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et.
+        </p>
+
+        <div class="members">
+          <div class="member wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="200">
+            <img class="lozad" data-src="../assets/img/people/team1.webp" alt="Founder & CEO Filan Fisteku Picture" />
+            <div class="overlay">
+              <h3>Filan Fisteku</h3>
+              <span>Founder & CEO</span>
+              <div class="socials">
+                <a target="_blank" href="https://www.facebook.com">
+                  <i class="fab fa-facebook"></i>
+                </a>
+
+                <a target="_blank" href="https://www.instagram.com">
+                  <i class="fab fa-instagram"></i>
+                </a>
+
+                <a target="_blank" href="https://www.linkedin.com">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="member wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="200">
+            <img class="lozad" data-src="../assets/img/people/team2.webp" alt="Head of Marketing Filane Fisteku Picture" />
+            <div class="overlay">
+              <h3>Filane Fisteku</h3>
+              <span>Head of Marketing</span>
+              <div class="socials">
+                <a target="_blank" href="https://www.facebook.com">
+                  <i class="fab fa-facebook"></i>
+                </a>
+
+                <a target="_blank" href="https://www.instagram.com">
+                  <i class="fab fa-instagram"></i>
+                </a>
+
+                <a target="_blank" href="https://www.linkedin.com">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="member wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="200">
+            <img class="lozad" data-src="../assets/img/people/team3.webp" alt="Blockhain Analyst Filan Fisteku Picture" />
+            <div class="overlay">
+              <h3>Filan Fisteku</h3>
+              <span>Blockhain Analyst</span>
+              <div class="socials">
+                <a target="_blank" href="https://www.facebook.com">
+                  <i class="fab fa-facebook"></i>
+                </a>
+
+                <a target="_blank" href="https://www.instagram.com">
+                  <i class="fab fa-instagram"></i>
+                </a>
+
+                <a target="_blank" href="https://www.linkedin.com">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="main">
+            <div class="logo">
+              <a href="">
+                <img src="../assets/img/logo.png" alt="CryptoChain Logo" />
+              </a>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore
+            </p>
+            <div class="socials">
+              <ul>
+                <li>
+                  <a target="_blank" href="https://www.facebook.com">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.twitter.com">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.youtube.com">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.instagram.com">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="quick-links">
+            <h2>Quick Links</h2>
+            <ul>
+              <li>
+                <a class="secondary-link" href="../index.html">Home</a>
+              </li>
+              <li>
+                <a class="secondary-link" href="../about.html">About</a>
+              </li>
+              <li>
+                <a class="secondary-link" href="./services.html">Services</a>
+              </li>
+              <li>
+                <a class="secondary-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="newsletter">
+            <h2>Newsletter</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod
+            </p>
+            <form action="">
+              <input type="email" placeholder="Enter Your Email" />
+              <button type="submit" class="primary-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">Copyright © 2022 – All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../assets//js/main.js"></script>
+    <script src="../assets/js/particles.js"></script>
+
+    <script>
+      window.onscroll = function() {
+          scrollFunctionGoTopBtn()
+      };
+    </script>
+
+  </body>
+</html>

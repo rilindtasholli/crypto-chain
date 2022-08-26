@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Register</title>
 
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/contact.css">
-    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/register.css">
+
+    <link rel="stylesheet" href="../assets//css//animate.css">
 </head>
 <body>
   <button onclick="goToTop()" class="goTopBtn">
@@ -38,16 +39,16 @@
                 <li>
                     <a href="./services.html">Services</a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="./contact.html">Contact</a>
                 </li>
             </ul>
     
             <div class="account">
                 <a class="secondary-link" href="./login.html">Sign In</a>
-                <a class="primary-btn" href="./register.html">Get Started</a>
+                <!-- <a class="primary-btn" href="./register.html">Get Started</a> -->
             </div>
-        
+
             <button onclick="toggleSideBar()" class="toggleSideBar">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -66,76 +67,40 @@
                 <li>
                     <a href="./services.html">Services</a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="./contact.html">Contact</a>
                 </li>
             </ul>
     
             <div class="account">
                 <a class="secondary-link" href="./login.html">Sign In</a>
-                <a class="primary-btn" href="./register.html">Get Started</a>
+                <!-- <a class="primary-btn" href="./register.html">Get Started</a> -->
             </div>
         </div>
         
         <div class="content">
-            <h1>Contact Us</h1>
+            <h1>Create Account</h1>
             <div class="navigation">
                 <a class="secondary-link" href="/">Home</a>
                 <i class="fa-solid fa-chevron-right"></i>
-                <span>Contact</span>
+                <span>Register</span>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="contact-section">
-           
-
-            <div class="contact-info">
-                <span class="sub-title wow animate__fadeInLeft" data-wow-duration="1.5s">Contact Us</span>
-                <h2 class="wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="200">Let's Ge In Touch</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
-
-                <div class="info-items">
-                    <div class="info-item">
-                        <h3>
-                            <i class="fas fa-map-marker-alt"></i>
-                            California, US Office
-                        </h3>
-                        <span>226 Monterey Ave Thermal, 92274</span>
+        <section id="register-section">
+            <form action="" class="wow animate__fadeInLeft" data-wow-duration="1s" data-wow-offset="200">
+                <h2>Create an account in Cryptoxo</h2>
+                <div class="input-group">
+                    <div class="input-field">
+                        <label id="fname" name="fname" for="fname">First name</label>
+                        <input type="text" placeholder="First Name" required>
                     </div>
-
-                    <div class="info-item">
-                        <h3>
-                            <i class="fas fa-map-marker-alt"></i>
-                            Prishtine, RKS Office
-                        </h3>
-                        <span>Rruga Filan Fisteku 230, 10000</span>
+                    <div class="input-field">
+                        <label for="lname">Last name</label>
+                        <input id="lname" name="lname" type="text" placeholder="Last Name" required>
                     </div>
-
-                    <div class="info-item">
-                        <h3>
-                            <i class="fas fa-map-marker-alt"></i>
-                            Calling Support
-                        </h3>
-                        <span>(+62)81 132 3212</span>
-                    </div>
-
-                    <div class="info-item">
-                        <h3>
-                            <i class="fas fa-map-marker-alt"></i>
-                            Email Information
-                        </h3>
-                        <span>info@CryptoChain.com</span>
-                    </div>
-                </div>
-
-                 <form action="" id="form" class="wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="150">
-                <!-- <h2>Sign in to CryptoChain</h2> -->
-
-                <div class="input-field">
-                    <label for="name">Name</label>
-                    <input id="name" name="name" type="text" placeholder="Enter your name" required>
                 </div>
 
                 <div class="input-field">
@@ -144,54 +109,23 @@
                 </div>
 
                 <div class="input-field">
-                    <label for="subject">Subject</label>
-                    <input id="subject" name="subject" type="text" placeholder="Enter the subject" required>
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" placeholder="Minimum 8 characters" required>
                 </div>
-
-                <div class="input-field">
-                    <label for="subject">Message</label>
-                    <!-- <input id="subject" name="subject" type="text" placeholder="Enter the subject" required> -->
-                    <textarea name="message" id="message" placeholder="Enter your message..." cols="30" rows="5"></textarea>
-                </div>
-    
-                <button type="submit">Send Message</button>
-    
                 
-            </form>
-                <hr>
-
-                <div class="follow-us">
-                    <h3>Follow us on social media</h3>
-                    
-                    <div class="socials">
-                        <ul>
-                            <li>
-                                <a target="_blank" href="https://www.facebook.com">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.twitter.com">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.youtube.com">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.instagram.com">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </li>
-                        </ul>
+                <div class="input-group">
+                    <div class="input-field checkbox">
+                        <input type="checkbox" required>
+                        <span>I certify that I am 18 years of age or older, agree to the <a href="#useragreement">User Agreement</a>, and acknowledge the <a href="#privacypolicy">Privacy Policy</a>.</span>
                     </div>
                 </div>
+    
+                <button>Create free account</button>
+                <!-- <a class="register-btn" href="./register.html">Create account</a> -->
+                
+                <span class="already-registered">Already registered? <a class="sign-in-btn" href="./login.html">Sign In</a></span>
                
-
-
-            </div>
+            </form>
         </section>
         
     </main>
@@ -202,12 +136,7 @@
 
             <div class="footer-top">
                 <div class="main">
-                    <div class="logo">
-                        <a href="">
-                            <img src="../assets/img/logo.png" alt="CryptoChain Logo">
-                        </a>
-                    </div>
-                    
+                    <img src="../assets/img/logo.png" alt="CryptoChain Logo">
                     <p>Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
                     <div class="socials">
                         <ul>
@@ -239,16 +168,16 @@
                     <h2>Quick Links</h2>
                     <ul>
                         <li>
-                            <a class="secondary-link" href="../index.html">Home</a>
+                            <a class="secondary-link" href="#home">Home</a>
                         </li>
                         <li>
-                            <a class="secondary-link" href="./about.html">About</a>
+                            <a class="secondary-link" href="#about">About</a>
                         </li>
                         <li>
-                            <a class="secondary-link" href="./services.html">Services</a>
+                            <a class="secondary-link" href="#services">Services</a>
                         </li>
                         <li>
-                            <a class="secondary-link" href="./contact.html">Contact</a>
+                            <a class="secondary-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -264,7 +193,7 @@
             </div>
 
             <div class="footer-bottom">
-                Copyright © 2022 – All rights reserved.
+                Copyright © 2021 – All rights reserved.
             </div>
         </div>
     </footer>
@@ -281,23 +210,5 @@
             scrollFunctionGoTopBtn()
         };
     </script>
-
-    <script> 
-
-        var form = document.getElementById('form'); 
-        form.addEventListener('mousemove', (e) =>{ 
-
-        var x = (window.innerWidth / 2 - e.pageX) / 45;  
-        var y = (window.innerHeight / 2 - e.pageY) / 45;
-        form.style.transform = 'rotateX(' + x + 'deg) rotateY(' + y + 'deg)';
-
-        }); 
-
-        form.addEventListener('mouseleave', function(){
-        form.style.transform = 'rotateX(0deg) rotateY(0deg)';
-
-        });
-
-</script> 
 </body>
 </html>

@@ -5,22 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cryptocurrency Platform</title>
+
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
    
+    <button onclick="goToTop()" class="goTopBtn">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
 
     <header>
         <div id="particles-js"></div>
         <nav>
             <div class="logo">
                 <a href="">
-                    <img src="./assets/img/logo.png" alt="">
+                    <img src="./assets/img/logo.png" alt="CryptoChain Logo">
                 </a>
             </div>
     
@@ -43,29 +51,57 @@
                 <a class="secondary-link" href="./pages/login.html">Sign In</a>
                 <a class="primary-btn" href="./pages/register.html">Get Started</a>
             </div>
+
+            <button onclick="toggleSideBar()" class="toggleSideBar">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
 
-        <div class="content">
-            <h1>Blockchain Solutions and <span>Cryptocurrency</span> Investments</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque non itaque omnis optio excepturi officiis eos quae. Ipsam, deleniti sit!</p>
-            <div class="header-buttons">
-                <a class="primary-btn" href="./pages/about.html">Learn More</a>
-                <a class="secondary-link" target="_blank" href="https://www.youtube.com/watch?v=Vsq1_kewchQ">Watch Video</a>
+        <div class="sidebar">
+            <button onclick="toggleSideBar()" class="close">×</button>
+    
+            <ul>
+                <li class="active">
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="./pages/about.html">About</a>
+                </li>
+                <li>
+                    <a href="./pages/services.html">Services</a>
+                </li>
+                <li>
+                    <a href="./pages/contact.html">Contact</a>
+                </li>
+            </ul>
+    
+            <div class="account">
+                <a class="secondary-link" href="./pages/login.html">Sign In</a>
+                <a class="primary-btn" href="./pages/register.html">Get Started</a>
             </div>
         </div>
-        <div class="header-image">
-            <img src="./assets/img/header-image.png" alt="">
+
+        <div class="content">
+            <h1 class="wow animate__slideInLeft" data-wow-duration="1.5s">Blockchain Solutions and <span>Cryptocurrency</span> Investments</h1>
+            <p class="wow animate__slideInRight" data-wow-duration="1.5s">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque non itaque omnis optio excepturi officiis eos quae. Ipsam, deleniti sit!</p>
+            <div class="header-buttons">
+                <a class="primary-btn wow animate__slideInLeft" data-wow-duration="1.5s" href="./pages/about.html">Learn More</a>
+                <a class="secondary-link wow animate__slideInRight popup-youtube" data-wow-duration="1.5s" href="https://www.youtube.com/watch?v=Vsq1_kewchQ">Watch Video</a>
+            </div>
+        </div>
+        <div class="header-image wow animate__slideInRight" data-wow-duration="1.5s">
+            <img class="lozad" data-wow-duration="1.5s" data-src="./assets/img/header-image.png" alt="Header Bitcoin Illustration">
         </div>
     </header>
 
     <main>
         <section id="about-section">
-            <h2>Most Trusted Cryptocurrency Platform</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </p>
+            <h2 class="wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="200">Most Trusted Cryptocurrency Platform</h2>
+            <p class="wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="250">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </p>
             
             <div class="container">
-                <div class="card">
-                    <img src="./assets/img/easy.png" alt="">
+                <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
+                    <img class="lozad" data-src="./assets/img/easy.png" alt="Easy transcation illustration">
                     <h3>Easy To Transact</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                     <a class="primary-link" href="./pages/about.html">
@@ -74,8 +110,8 @@
                     </a>
                 </div>
 
-                <div class="card">
-                    <img src="./assets/img/bitc.png" alt="">
+                <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
+                    <img class="lozad" data-src="./assets/img/bitc.png" alt="Bitcoin illustration">
                     <h3>No Fear Of Loss</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                     <a class="primary-link" href="./pages/about.html">
@@ -84,8 +120,8 @@
                     </a>
                 </div>
 
-                <div class="card">
-                    <img src="./assets/img/secure.png" alt="">
+                <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
+                    <img class="lozad" data-src="./assets/img/secure.png" alt="Security illustration">
                     <h3>Foolproof Security</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                     <a class="primary-link" href="./pages/about.html">
@@ -97,12 +133,12 @@
         </section>
 
         <section id="welcome-section">
-            <div class="section-image">
-                <img src="./assets/img/Bitcoin-Analysis2.png" alt="">
+            <div class="section-image wow animate__fadeInLeft" data-wow-duration="1.5s" data-wow-offset="200">
+                <img class="lozad"data-src="./assets/img/Bitcoin-Analysis2.png" alt="Bitcoin Analysis Illustration">
             </div>
 
             <div class="section-content">
-                <span class="sub-title">Welcome To Cryptoxo</span>
+                <span class="sub-title wow animate__fadeInRight" data-wow-duration="1.5s" data-wow-offset="150">Welcome To Cryptoxo</span>
                 <h2>Smart and Secure Way To Invest In Crypto</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
                 <a class="primary-btn" href="./pages/register.html">Get Started Now</a>
@@ -112,13 +148,13 @@
         <section id="choose-us-section">
             
             <div class="section-content">
-                <span class="sub-title">Why Choose Us</span>
+                <span class="sub-title wow animate__fadeInLeft" data-wow-duration="1.5s" data-wow-offset="200">Why Choose Us</span>
                 <h2>We've Built A Platform To Buy And Sell Shares</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et.</p>
                 
                 <ul>
                     <li>
-                        <img src="./assets/img/secure.png" alt="">
+                        <img class="lozad" data-src="./assets/img/secure.png" alt="Secure Data Illustration">
                         <div class="content">
                             <h3>Secure User Data</h3>
                             <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore magna aliqua</p>
@@ -126,7 +162,7 @@
                     </li>
 
                     <li>
-                        <img src="./assets/img/credibility.png" alt="">
+                        <img class="lozad" data-src="./assets/img/credibility.png" alt="Credibility Illustration">
                         <div class="content">
                             <h3>Most Creadibility</h3>
                             <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore magna aliqua</p>
@@ -134,7 +170,7 @@
                     </li>
 
                     <li>
-                        <img src="./assets/img/analysis.png" alt="">
+                        <img class="lozad" data-src="./assets/img/analysis.png" alt="Data Analysis Illustration">
                         <div class="content">
                             <h3>Big Data Insights</h3>
                             <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore magna aliqua</p>
@@ -144,20 +180,20 @@
                 <!-- <a class="primary-btn" href="./pages/register.html">Get Started Now</a> -->
             </div>
 
-            <div class="section-image">
-                <img src="./assets/img/Bitcoin-Analysis3.png" alt="">
+            <div class="section-image wow animate__fadeInRight" data-wow-duration="1.5s" data-wow-offset="200">
+                <img class="lozad" data-src="./assets/img/Bitcoin-Analysis3.png" alt="Bitcoin Analysis Illustration">
             </div>
         </section>
 
         <section id="services-section">
-            <span class="sub-title">Our Services</span>
-            <h2>Most Trusted Cryptocurrency Platform</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </p>
+            <span class="sub-title wow animate__fadeInLeft" data-wow-duration="1.5s" data-wow-offset="200">Our Services</span>
+            <h2 class="wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="200">Most Trusted Cryptocurrency Platform</h2>
+            <p class="wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="200">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </p>
             
             <div class="container">
-                <div class="card">
-                    <img src="./assets/img/easy.png" alt="">
-                    <h3>Easy To Transact</h3>
+                <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
+                    <img class="lozad" data-src="./assets/img/wallet.png" alt="Wallet Illustration">
+                    <h3>Secure Wallet</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                     <a class="primary-link" href="./pages/services.html">
                         Read More
@@ -165,9 +201,9 @@
                     </a>
                 </div>
 
-                <div class="card">
-                    <img src="./assets/img/bitc.png" alt="">
-                    <h3>No Fear Of Loss</h3>
+                <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
+                    <img class="lozad" data-src="./assets/img/secure.png" alt="Security Illustration">
+                    <h3>Fully Protection</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                     <a class="primary-link" href="./pages/services.html">
                         Read More
@@ -175,9 +211,9 @@
                     </a>
                 </div>
 
-                <div class="card">
-                    <img src="./assets/img/secure.png" alt="">
-                    <h3>Foolproof Security</h3>
+                <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
+                    <img class="lozad" data-src="./assets/img/analysis.png" alt="Analysis and Planning Illustration">
+                    <h3>Analysis & Planning</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                     <a class="primary-link" href="./pages/services.html">
                         Read More
@@ -185,9 +221,9 @@
                     </a>
                 </div>
 
-                <div class="card">
-                    <img src="./assets/img/secure.png" alt="">
-                    <h3>Foolproof Security</h3>
+                <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
+                    <img class="lozad" data-src="./assets/img/invest.png" alt="Investment Illustration">
+                    <h3>Investment projects</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                     <a class="primary-link" href="./pages/services.html">
                         Read More
@@ -195,9 +231,9 @@
                     </a>
                 </div>
 
-                <div class="card">
-                    <img src="./assets/img/secure.png" alt="">
-                    <h3>Foolproof Security</h3>
+                <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
+                    <img class="lozad" data-src="./assets/img/platform.png" alt="Trading Platform Illustration">
+                    <h3>Crypto Trading Platform</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                     <a class="primary-link" href="./pages/services.html">
                         Read More
@@ -205,9 +241,9 @@
                     </a>
                 </div>
 
-                <div class="card">
-                    <img src="./assets/img/secure.png" alt="">
-                    <h3>Foolproof Security</h3>
+                <div class="card wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
+                    <img class="lozad" data-src="./assets/img/buy.png" alt="Buy and Sell Coins Illustration">
+                    <h3>Buy & Sell Coin</h3>
                     <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore </p>
                     <a class="primary-link" href="./pages/services.html">
                         Read More
@@ -218,32 +254,32 @@
         </section>
 
         <section id="statistics-section">
-            <span class="sub-title">$20 Trillion</span>
-            <h2>People From All Around The World Have Purchased Our Tokens</h2>
+            <span class="sub-title wow animate__fadeInRight" data-wow-duration="1.5s" data-wow-offset="250">$20 Trillion</span>
+            <h2 class="wow animate__fadeInLeft" data-wow-duration="1.5s" data-wow-offset="250">People From All Around The World Have Purchased Our Tokens</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </p>
             
             <div class="statistics">
-                <div class="statistic">
+                <div class="statistic wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="200">
                     <i class="fa-solid fa-medal"></i>
-                    <h3>12</h3>
+                    <h3><span id="experienceNum">12</span></h3>
                     <span>Years Of Experience</span>
                 </div>
 
-                <div class="statistic">
+                <div class="statistic wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="200">
                     <i class="fa-solid fa-handshake"></i>
-                    <h3>20T</h3>
+                    <h3><span id="investmentNum">20</span>T</h3>
                     <span>Invested On Cryptoxo</span>
                 </div>
 
-                <div class="statistic">
+                <div class="statistic wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="200">
                     <i class="fa-solid fa-people-group"></i>
-                    <h3>85</h3>
+                    <h3><span id="teamNum">85</span></h3>
                     <span>Professional Team</span>
                 </div>
 
-                <div class="statistic">
+                <div class="statistic wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="200">
                     <i class="fa-solid fa-earth-americas"></i>
-                    <h3>150</h3>
+                    <h3><span id="countriesNum">150</span></h3>
                     <span>Countries Supported</span>
                 </div>
 
@@ -251,14 +287,14 @@
         </section>
 
         <section id="testimonials-section">
-            <span class="sub-title">Testimonials</span>
-            <h2>What Our Clients Say About Us</h2>
+            <span class="sub-title wow animate__fadeInLeft" data-wow-duration="1.5s" data-wow-offset="200">Testimonials</span>
+            <h2 class="wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="200">What Our Clients Say About Us</h2>
             
             <div class="testimonials owl-carousel owl-theme">
 
                 <div class="testimonial card">
                     <div class="image">
-                        <img src="./assets/img/people/testimonial1.jpg" alt="">
+                        <img src="./assets/img/people/testimonial1.webp" alt="Renell Hill Picture">
                     </div>
                     <h3>Renell Hill</h3>
                     <span>Entrepreneur</span>
@@ -267,7 +303,7 @@
 
                 <div class="testimonial card">
                     <div class="image">
-                        <img src="./assets/img/people/testimonial2.jpg" alt="">
+                        <img src="./assets/img/people/testimonial2.webp" alt="Filan Fisteku Picture">
                     </div>
                     <h3>Filan Fisteku</h3>
                     <span>Social Media Manager</span>
@@ -276,7 +312,7 @@
 
                 <div class="testimonial card">
                     <div class="image">
-                        <img src="./assets/img/people/testimonial3.jpg" alt="">
+                        <img src="./assets/img/people/testimonial3.webp" alt="Selma Protz Picture">
                     </div>
                     <h3>Selma Protz</h3>
                     <span>Entrepreneur</span>
@@ -285,7 +321,7 @@
 
                 <div class="testimonial card">
                     <div class="image">
-                        <img src="./assets/img/people/testimonial4.jpg" alt="">
+                        <img src="./assets/img/people/testimonial4.webp" alt="Dane Todd Picture">
                     </div>
                     <h3>Dane Todd</h3>
                     <span>Developer</span>
@@ -300,8 +336,8 @@
 
 
         <section id="get-started-section">
-            <h2>Get started in just a few minutes</h2>
-            <p>Cryptoxo supports a variety of the most popular digital currencies.</p>
+            <h2 class="wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="200">Get started in just a few minutes</h2>
+            <p class="wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="250">Cryptoxo supports a variety of the most popular digital currencies.</p>
             
             <div class="steps">
                 <div class="step">
@@ -335,7 +371,7 @@
                 <div class="main">
                     <div class="logo">
                         <a href="">
-                            <img src="./assets/img/logo.png" alt="">
+                            <img src="./assets/img/logo.png" alt="CryptoChain Logo">
                         </a>
                     </div>
                     
@@ -403,9 +439,45 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <script src="./assets/js/particles.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/countup@1.8.2/countUp.js"></script>
     
+    <script src="./assets//js/main.js"></script>
+    <script src="./assets/js/particles.js"></script>
+
+    <script>
+        //--------------------------- [[CountUp.js]] -> CountUp number animations ---------------------------------
+        let experienceNum = new CountUp('experienceNum', 0, 12);
+        let investmentNum = new CountUp('investmentNum', 0, 20);
+        let teamNum = new CountUp('teamNum', 0, 85);
+        let countriesNum = new CountUp('countriesNum', 0, 150);
+
+        function countUp(){
+            if(isElementVisible('experienceNum')) experienceNum.start();
+            if(isElementVisible('investmentNum')) investmentNum.start();
+            if(isElementVisible('teamNum')) teamNum.start();
+            if(isElementVisible('countriesNum')) countriesNum.start();
+        }
+
+        //----------------- OnScroll -----------------
+        window.onscroll = function() {
+            scrollFunctionGoTopBtn()
+            countUp()
+        };
+
+    </script>
+
+    <script>
+        //--------------------------- [[Lightbox]] -> for opening images and videos ---------------------------------
+        $(document).ready(function() {
+            $('.popup-youtube').magnificPopup({
+            type: 'iframe'
+        });
+        });
+    </script>
+
     <script>
         $(document).ready(function(){
             $('.owl-carousel').owlCarousel({
@@ -426,7 +498,7 @@
                 },
                 smartSpeed: 450,
                 autoplay:true,
-                autoplayTimeout:2500,
+                autoplayTimeout: 2000,
                 autoplayHoverPause:true
             });
         });

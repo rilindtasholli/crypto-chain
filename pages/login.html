@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Login</title>
 
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/contact.css">
-    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+
+    <link rel="stylesheet" href="../assets//css//animate.css">
 </head>
 <body>
-  <button onclick="goToTop()" class="goTopBtn">
+     <button onclick="goToTop()" class="goTopBtn">
         <i class="fa-solid fa-angle-up"></i>
     </button>
-
     <header>
         <div id="particles-js"></div>
 
@@ -38,13 +38,13 @@
                 <li>
                     <a href="./services.html">Services</a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="./contact.html">Contact</a>
                 </li>
             </ul>
     
             <div class="account">
-                <a class="secondary-link" href="./login.html">Sign In</a>
+                <!-- <a class="secondary-link" href="./login.html">Sign In</a> -->
                 <a class="primary-btn" href="./register.html">Get Started</a>
             </div>
         
@@ -66,132 +66,45 @@
                 <li>
                     <a href="./services.html">Services</a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="./contact.html">Contact</a>
                 </li>
             </ul>
     
             <div class="account">
-                <a class="secondary-link" href="./login.html">Sign In</a>
+                <!-- <a class="secondary-link" href="./login.html">Sign In</a> -->
                 <a class="primary-btn" href="./register.html">Get Started</a>
             </div>
         </div>
         
         <div class="content">
-            <h1>Contact Us</h1>
+            <h1>Sign In</h1>
             <div class="navigation">
                 <a class="secondary-link" href="/">Home</a>
                 <i class="fa-solid fa-chevron-right"></i>
-                <span>Contact</span>
+                <span>Login</span>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="contact-section">
-           
-
-            <div class="contact-info">
-                <span class="sub-title wow animate__fadeInLeft" data-wow-duration="1.5s">Contact Us</span>
-                <h2 class="wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="200">Let's Ge In Touch</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
-
-                <div class="info-items">
-                    <div class="info-item">
-                        <h3>
-                            <i class="fas fa-map-marker-alt"></i>
-                            California, US Office
-                        </h3>
-                        <span>226 Monterey Ave Thermal, 92274</span>
-                    </div>
-
-                    <div class="info-item">
-                        <h3>
-                            <i class="fas fa-map-marker-alt"></i>
-                            Prishtine, RKS Office
-                        </h3>
-                        <span>Rruga Filan Fisteku 230, 10000</span>
-                    </div>
-
-                    <div class="info-item">
-                        <h3>
-                            <i class="fas fa-map-marker-alt"></i>
-                            Calling Support
-                        </h3>
-                        <span>(+62)81 132 3212</span>
-                    </div>
-
-                    <div class="info-item">
-                        <h3>
-                            <i class="fas fa-map-marker-alt"></i>
-                            Email Information
-                        </h3>
-                        <span>info@CryptoChain.com</span>
-                    </div>
-                </div>
-
-                 <form action="" id="form" class="wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="150">
-                <!-- <h2>Sign in to CryptoChain</h2> -->
-
+        <section id="login-section">
+            <form action="" class="wow animate__fadeInLeft" data-wow-duration="1s" data-wow-offset="200">
+                <h2>Sign in to CryptoChain</h2>
                 <div class="input-field">
-                    <label for="name">Name</label>
-                    <input id="name" name="name" type="text" placeholder="Enter your name" required>
+                    <label for="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        Email
+                    </label>
+                    <input type="email" placeholder="Your email address" required>
                 </div>
-
-                <div class="input-field">
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email" placeholder="Email" required>
-                </div>
-
-                <div class="input-field">
-                    <label for="subject">Subject</label>
-                    <input id="subject" name="subject" type="text" placeholder="Enter the subject" required>
-                </div>
-
-                <div class="input-field">
-                    <label for="subject">Message</label>
-                    <!-- <input id="subject" name="subject" type="text" placeholder="Enter the subject" required> -->
-                    <textarea name="message" id="message" placeholder="Enter your message..." cols="30" rows="5"></textarea>
-                </div>
-    
-                <button type="submit">Send Message</button>
-    
                 
+    
+                <button>Continue</button>
+                <a class="register-btn" href="./register.html">Create account</a>
+    
+                <a class="forgot-password-btn" href="#forgotpassword">Forgot password?</a>
             </form>
-                <hr>
-
-                <div class="follow-us">
-                    <h3>Follow us on social media</h3>
-                    
-                    <div class="socials">
-                        <ul>
-                            <li>
-                                <a target="_blank" href="https://www.facebook.com">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.twitter.com">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.youtube.com">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.instagram.com">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-               
-
-
-            </div>
         </section>
         
     </main>
@@ -282,22 +195,5 @@
         };
     </script>
 
-    <script> 
-
-        var form = document.getElementById('form'); 
-        form.addEventListener('mousemove', (e) =>{ 
-
-        var x = (window.innerWidth / 2 - e.pageX) / 45;  
-        var y = (window.innerHeight / 2 - e.pageY) / 45;
-        form.style.transform = 'rotateX(' + x + 'deg) rotateY(' + y + 'deg)';
-
-        }); 
-
-        form.addEventListener('mouseleave', function(){
-        form.style.transform = 'rotateX(0deg) rotateY(0deg)';
-
-        });
-
-</script> 
 </body>
 </html>
